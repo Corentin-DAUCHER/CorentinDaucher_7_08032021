@@ -14,13 +14,42 @@
 
         <h3>Votre nom d'utilisateur est : <strong id="outputUsername">EMPTY</strong></h3>
 
+        <Card>
+
+            <template v-slot:title>
+
+                <h3>Title</h3>
+
+            </template>
+
+            <template v-slot:text>
+
+                <h3>Texte</h3>
+
+            </template>
+
+            <template v-slot:action>
+
+                
+
+            </template>
+
+        </Card>
+
     </div>
 
 </template>
 
 <script>
 
+    import Card from '../components/custom-card';
+
     export default {
+
+        name: 'MyPage',
+        components: {
+            Card
+        },
 
         mounted() {
 
